@@ -1,0 +1,29 @@
+  .styleCardContent {
+    padding: 4px 16px 20px 16px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+  }
+  
+  .styleCardTitle {
+    font-size: larger;
+    color: aliceblue;
+    font-weight: bolder;
+    margin: 12px 0px 0px 0px;
+  }
+  .link--style{
+      color: aquamarine;
+  }
+  .styleLocationLabel {
+    font-family:Arial;
+    color:aliceblue;
+    font-size: 14;
+    margin-left: 30px;
+  }
+
+  h6{
+    color: aliceblue;
+  }

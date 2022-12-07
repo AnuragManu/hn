@@ -1,0 +1,9 @@
+.filter--style {
+    color: aliceblue;
+    font-weight: bolder;
+}
+select {
+    width: 20%;
+    padding:10px;
+    border-radius:10px;
+  }

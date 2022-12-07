@@ -1,0 +1,19 @@
+.pagenation--div{
+    background-color: #b5b5b5;
+    display: flex;
+ justify-content: center;
+align-items:center;
+
+}
+.button--pagenation{
+    padding:10px;
+    border-radius:10px;
+    background-color: #111;
+    color: aliceblue;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.Text--pageation{
+    font-weight: bolder;
+}

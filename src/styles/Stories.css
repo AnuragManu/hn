@@ -1,0 +1,29 @@
+
+    .styleCardContent--story {
+    padding: 4px 16px 20px 16px;
+    /* margin: 20px; */
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+  }
+  
+  .styleCardTitle--story {
+    font-size: larger;
+    color: aliceblue;
+    font-weight: bolder;
+    margin: 12px 0px 0px 0px;
+  }
+  .link--style--story{
+      color: aquamarine;
+  }
+  .styleLocationLabel--story {
+    font-family:Arial;
+    color:aliceblue;
+    font-size: 14;
+    margin-left: 30px;
+  }
+
+  

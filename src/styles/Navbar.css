@@ -1,0 +1,29 @@
+.navigation--bar {
+    align-items:center;
+    background-color: #333;
+    display: flex;
+}
+.ref {
+    align-items:stretch;
+    padding: 10px;
+    color: aliceblue;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.title {
+    font-weight: bolder;
+    color: whitesmoke;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+a:hover {
+    background-color: #111;
+  }
+.filter {
+    margin-left:50px;
+}
+.search_filter{
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: space-evenly;
+}

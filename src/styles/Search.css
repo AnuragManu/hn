@@ -1,0 +1,13 @@
+.input-box{
+    padding:10px;
+    margin-right:10px;
+    border-radius:10px;
+    width: 200px;
+}
+.button{
+    padding:10px;
+    border-radius:10px;
+    background-color: #111;
+    color: aliceblue;
+    font-weight: bolder;
+}
