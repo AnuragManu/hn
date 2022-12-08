@@ -81,7 +81,7 @@ const AppProvider = ({children}) => {
 useEffect(()=>{
   let API_URL = `${baseUrl}${state.sortByValue}?query=${(state.query)}&tags=${state.filterOnValue}&numericFilters=created_at_i>=${timeStamp[state.timeBeforeValue]}&page=${state.page}`
     fetchApiData(API_URL)
-  },[state.url,state.timeBeforeValue,state.sortByValue,state.timeBeforeValue,state.query,state.filterOnValue,state.page])
+  },[state.url,state.timeBeforeValue,state.sortByValue,state.query,state.filterOnValue,state.page])
     return (
         <AppContext.Provider value={{...state , searchPost , filterOn , filterBy , filterTime , getNextPage , getPrevPage}}>{children}</AppContext.Provider>
     )
