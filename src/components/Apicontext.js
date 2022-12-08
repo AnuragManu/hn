@@ -20,7 +20,7 @@ const initialState = {
   page: 0,
   hits: [],
   query: "",
-  filterOnValue: "(story,comment)",
+  filterOnValue: "story",
   sortByValue: "search_by_date",
   timeBeforeValue: "A",
 };
