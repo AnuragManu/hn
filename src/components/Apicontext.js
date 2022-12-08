@@ -3,6 +3,7 @@ import reducer from './Reducer';
 
 
 const baseUrl = 'https://hn.algolia.com/api/v1/'
+let now = new Date(new Date().getTime())
 let yesterday = new Date(new Date().getTime() - (24 * 60 * 60 * 1000));
 let lastweek = new Date(new Date().getTime() - (7 * 24 * 60 * 60 * 1000));
 let lastmonth = new Date(new Date().getTime() - (30 * 24 * 60 * 60 * 1000));
@@ -10,7 +11,7 @@ function seconds_since_epoch(d){
   return Math.floor( d / 1000 ); 
 }
 const timeStamp = {
-    "A" : seconds_since_epoch(0),
+    "A" : seconds_since_epoch(now),
     "D" : seconds_since_epoch(yesterday),
     "W" : seconds_since_epoch(lastweek),
     "M" : seconds_since_epoch(lastmonth)
@@ -39,7 +40,6 @@ const AppProvider = ({children}) => {
         }
     };
     const searchPost = (searchQuery) => {
-        console.log(searchQuery)
         dispatch({
           type: "SEARCH_QUERY",
           payload: searchQuery,
@@ -78,7 +78,7 @@ const AppProvider = ({children}) => {
       };
 
 useEffect(()=>{
-  let API_URL = `${baseUrl}${state.sortByValue}?query=${(state.query)}&tags=${state.filterOnValue}&numericFilters=created_at_i>=${timeStamp[state.timeBeforeValue]}&page=${state.page}`
+  let API_URL = `${baseUrl}${state.sortByValue}?query=${(state.query)}&tags=${state.filterOnValue}&numericFilters=created_at_i<=${timeStamp[state.timeBeforeValue]}&page=${state.page}`
     fetchApiData(API_URL)
   },[state.url,state.timeBeforeValue,state.sortByValue,state.query,state.filterOnValue,state.page])
     return (
