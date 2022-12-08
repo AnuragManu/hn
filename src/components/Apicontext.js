@@ -16,15 +16,14 @@ const timeStamp = {
     "M" : seconds_since_epoch(lastmonth)
   }
 const initialState = {
-    isLoading: true,
-    nbPages: 0,
-    page: 0,
-    hits: [],
-    query :"",
-    filterOnValue : "(story,comment)",
-    sortByValue : "search",
-    timeBeforeValue : 'A'
-  };
+  nbPages: 0,
+  page: 0,
+  hits: [],
+  query: "",
+  filterOnValue: "(story,comment)",
+  sortByValue: "search_by_date",
+  timeBeforeValue: "A",
+};
 const AppContext = React.createContext();
 
 const AppProvider = ({children}) => {
